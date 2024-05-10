@@ -14,35 +14,7 @@
     <header>
 
         <img src="logomoral3.png" width="325px">
-         <div id="resultado"></div>
-    
-        <script>
-            function buscar() {
-                var input = document.getElementById('buscador').value.toLowerCase();
-                var elementos = document.getElementsByTagName('p');
-                var encontrado = false;
-    
-                for (var i = 0; i < elementos.length; i++) {
-                    var texto = elementos[i].textContent.toLowerCase();
-                    if (texto.includes(input)) {
-                        elementos[i].style.display = 'block';
-                        if (!encontrado) {
-                            elementos[i].scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-                            encontrado = true;
-                        }
-                    } else {
-                        elementos[i].style.display = 'none';
-                    }
-                }
-    
-                if (!encontrado) {
-                    document.getElementById('resultado').innerText = 'No se encontraron resultados.';
-                    document.getElementById('resultado').style.display = 'block';
-                } else {
-                    document.getElementById('resultado').style.display = 'none';
-                }
-            }
-        </script>
+        
         
     </header>
     <hr>
@@ -74,7 +46,7 @@
     <footer>
       <a class="siguiente" href="expositor2b-20+21.html"><img width="50px" src="flechaderecha.png"></a>
        <a class="anterior" href="expositor2b-18.html"><img class="izquierda" width="50px" src="flechaizquierda.png"></a>
-        <p>thule</p>
+        
     </footer>
    
 </body>
